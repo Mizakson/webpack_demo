@@ -2,6 +2,7 @@ import _ from 'lodash';
 // import myName from './myName';
 
 import './style.css';
+import Icon from './icon.png';
 
 function component() {
     const element = document.createElement('div');
@@ -11,6 +12,11 @@ function component() {
     element.classList.add('hello');
 
     // element.textContent = myName('Max');
+
+    const myIcon = new Image();
+    myIcon.src = Icon;
+
+    element.appendChild(myIcon);
 
     return element;
 }
